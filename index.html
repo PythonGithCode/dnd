@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>English</title>
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hotkeys/0.2.0/jquery.hotkeys.min.js"></script>
+    <!--  <link rel=""> -->
+    <link rel="icon" href="https://www.python.org/static/favicon.ico">
+
+    <!-- dyslecix -->
+    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/PythonGithCode/PythonGithCode/main/style.css"> -->
+
+
+
+    <!-- <link rel="stylesheet" href="https://opendyslexic.org/files/css/css_TCx_XEiAk351K0xYJfKNAVZwNewqENNciS4azCNnLDg.css" media="all">
+    <link rel="stylesheet" href="https://opendyslexic.org/files/css/css_TBn-BjrCDi3jk3U9WMNARltRG_c22C5Art6X1mc8f5A.css" media="all">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/3.3.5/cerulean/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="https://opendyslexic.org/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" media="all">
+    <link rel="stylesheet" href="https://opendyslexic.org/files/css/css_TF-MkTX-mUeynlfhKX1Qj34E5QjSpEyonY9GIn8dVPM.css" media="all">
+    <link rel="stylesheet" href="https://opendyslexic.org/files/css/css_xaJU72jAuGdwaW-AT8DAVp4DqDeKRUXAJArM-ju9zyk.css" media="all">
+    <link rel="stylesheet" href="https://opendyslexic.org/files/css/css_eOA_3TRBzYHgMD3IIyWkxb70wwzOaPschjMlH-WxtiY.css" media="all"> -->
+  </head>
+
+  <body>
+
+    <!-- D.N.D. -->
+    <div>
+
+      <div>
+        <h1>
+          DND player
+        </h1>
+
+        <!-- Pick a player -->
+        <div>
+          <span>Name: </span>
+          <input type="name" class="ui-input" id="namePlayer">
+          <button id="findPlayer" class="ui-button">Find</button>
+
+          <div>
+
+            <div>
+              <h4>Data:</h4>
+              <textarea class="playerDataJson" id="playerDataJson"></textarea>
+            </div>
+
+            <div>
+              <button class="ui-button" id="savePlayerData">Save Data</button>
+              <p class="did-save"></p>
+            </div>
+
+            <tabs>
+              <ul class="backOfUl">    
+                <li class="state-your">
+                  <a class="blank" href="#tabs-1">Kadden</a>
+                </li>
+                
+                <li class="state-your">
+                  <a class="blank" href="#tabs-2">Joey</a>
+                </li>
+                
+                <li class="state-your">
+                  <a class="blank" href="#tabs-3">Uri</a>
+                </li>
+                
+                <li class="state-your">
+                  <a class="blank" href="#tabs-4">Eljah</a>
+                </li>
+                <div hidden>
+                  <li class="state-your">
+                    <a class="blank" href="#tabs-5">shaker</a>
+                  </li>
+
+                  <li class="state-your">
+                    <a class="blank" href="#tabs-6">landen</a>
+                  </li>
+
+                  <li class="state-your">
+                    <a class="blank" href="#tabs-7">Evan</a>
+                  </li>
+
+                  <li class="state-your">
+                    <a class="blank" href="#tabs-8">jalen</a>
+                  </li>
+                </div>
+                  
+                <li class="state-your">
+                  <a class="blank" href="#tabs-0">lore/world</a>
+                </li>
+              </ul>
+
+              
+              
+              <div class="texts" id="tabs-1">
+                <h2>Hello, Kadden.</h2>
+                <p>This is your profile so good luck.</p>
+                
+                <!-- player -->
+                <div>
+                </div>
+              </div>
+              
+              <div class="texts" id="tabs-2">
+                <h2>Life an't fail, Joey</h2>
+                <p>This is your player, what you lose is what you gain.</p>
+                
+                <!-- player -->
+                <div>
+                </div>
+              </div>
+              
+              <div class="texts" id="tabs-3">
+                <h2>Uri,</h2>
+                <h4>please keep this party alive.</h4>
+                
+                <!-- player -->
+                <div>
+                </div>
+              </div>
+              
+              <div class="texts" id="tabs-4">
+                <h2>Eljah</h2>
+                <p>I bisto this shovel to thou.</p>
+                
+                <!-- player -->
+                <div>
+                </div>
+              </div>
+              <div hidden>
+                <div class="texts" id="tabs-5">
+                  <h2>shaker</h2>
+                  <p>For the love of god keep this family friendly</p>
+
+                  <!-- player -->
+                  <div>
+                  </div>
+                </div>
+
+                <div class="texts" id="tabs-6">
+                  <h2>landon</h2>
+                  <p>You can't ask for something you dont have.</p>
+
+                  <!-- player -->
+                  <div>
+                  </div>
+                </div>
+
+                <div class="texts" id="tabs-7">
+                  <h2>Evan</h2>
+                  <p>For the love of god, leave the children alone.</p>
+
+                  <!-- player -->
+                  <div>
+                  </div>
+                </div>
+
+                <div class="texts" id="tabs-8">
+                  <h2>Jalen (you forgot the space so its 2)</h2>
+                  <p>Good luck try your hardest.</p>
+
+                  <!-- player -->
+                  <div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="texts" id="tabs-0">
+                <h2>world/lore</h2>
+                <div>
+                  <p>What you think im going to put stuff here.</p>
+                  <p>
+                  Well if you said yes then you'd be right.
+                  </p>
+                  
+                  <div>
+                    
+                    <hr>
+                    
+                    <!-- dimension c -->
+                    <div>
+                      <h3>Dimension C</h3>
+                      
+                      <div>
+                        Blank white space of nothing.
+                        
+                        You shouln't be here you know,
+                        if you are and you've
+                        read this then call out the phrase,
+                        'I forfit my stat's to save my soul'
+                        
+                      </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <!-- The sword -->
+                    <div>
+                      <h3>The sword in the stone</h3>
+                      <p>
+                       with it come many swords.
+                       
+                       Seems to attract lost swords and 'Evan'.
+                       
+                       Some say that there is 20 swords in it, some are right.
+                       
+                       Try to put (or pull) something out
+                       if you find yourself at the stone of swords.
+                       
+                       You may be lucky, and be worthy or fail and die.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </tabs>
+
+            <!--
+            js code
+$( "tabs" ).each(function() {
+    $( this ).each(function () {
+        let kids = $( this ).children();
+        let name = $( kids[0] ).text();
+        let data = $( kids[1] ).html();
+        // screw this thi might be made or not i have school work tomorrow
+        // so f this
+        // let idna = $( this ).prevObject();
+
+
+        var stringBaseElement = "<li>";
+
+
+
+        stringBaseElement += "</li>"
+    });
+});
+            -->
+
+            <!-- findening a template for it -->
+            <!-- <tabs>
+
+              <tab>
+                <name>
+                  dave
+                </name>
+
+                <div>
+                  <p>
+                    text
+                  </p>           
+                </div>
+              </tab>
+              <tab>
+                <name>kad</name>
+
+                <div>
+                  <p>
+                    text
+                  </p>           
+                </div>
+              </tab>
+
+            </tabs>
+              -->
+          </div>
+        </div>
+
+        <!-- beta character thing -->
+        <div class="betaCharacter" id="betaCharacter">
+          <hr>
+
+          <h3>Kadden</h3>
+          <div>
+
+            <div id="playerHealthStat">
+              <p>
+                <span>Health</span>:
+                <span id="playerHealthStatValue">7</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- dyslexia -->
+
+
+    <div hidden>
+      <div id="wordsCountThing">
+        <span>Count: </span>
+        <input id="numbers" value="1">
+      </div>
+
+      <div class="Randomize">
+        <p>Words are fun to say.!</p>
+        <p>Matthew call spell the themerom right or left i think yeas or no works are fast left up down geomerty is fun something we probly we work on [rojects for unit L no note or test project durning class he will colect them there is one grade for unit L there is 4 projects the first on is the loingest in like 1.5 class prioeds wounts turndn it you get the review packet is all projects down. this is to show that we can still to make, if we do well an the final that is good the grades.</p>
+        <span class="hamed">hamburg</span>
+      </div>
+
+      <div>
+        <div>
+          <p class="RandomizeV2">Words are good</p>
+        </div>
+      </div>
+
+      <div hidden class="ui-widget-content">
+        <p>T&#x948;est&#x300;</p>
+      </div>
+    </div>
+
+    <div hidden id="notes">
+      <div id="q1">
+        <h3>Question 1</h3>
+        <p>30 x 25 feet,</p>
+        <p>750 feet<sup>2</sup></p>
+        <p>
+          per 1 squert foot is $3.49
+        </p>
+        <p>Total cost would be 3.49*750 = 2,617.5</p>
+      </div>
+      <div id="q2">
+        <h3>Question 2.</h3>
+        <p>over 10% more.</p>
+        <p>$2,617.5*1.1 = $2879.2500000000005</p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+      <div id="q3">
+        <h3>Question 3.</h3>
+        <p>h = 12 feet, one gallon of paint covers 450 ft<sup>2</sup> and cost 26.96</p>
+        <p>(2*(12*25) + 2*(12*30)) = 1320 ft<sup>2</sup>, of walls</p>
+        <p>(1320/450) = 3 <br> (3 * 26.96) = $80.88</p>
+      </div>
+      <div id="q4">
+        <h3>Question 4.</h3>
+        <p></p>
+      </div>
+      <div id="q5">
+        <h3>Question 5.</h3>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+      <div id="q6">
+        <h3>Question 6.</h3>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+
+    <div hidden id="gameDrop">
+      <div id="gameDropStats">
+        <p id="gameDropStatsText">
+          X: '<span id="gameDropX"></span>',
+          Y: '<span id="gameDropY"></span>',
+          Wins: '<span id="gameDropWins"></span>'.
+        </p>
+      </div>
+      <div id="gameDropArea" class="area-drop">
+
+        <div id="box">
+          <p class="inside-box">Win</p>
+        </div>
+
+        <div class="gameDropButtons" id="gameDropButtons">
+          <button class="ah-u ui-button" id="gameDropButtonDOWN">
+            DOWN
+          </button>
+          <button class="ah-d ui-button" id="gameDropButtonUP">
+            UP
+          </button>
+          <button class="ah-l ui-button" id="gameDropButtonLEFT">
+            LEFT
+          </button>
+          <button class="ah-r ui-button" id="gameDropButtonRIGHT">
+            RIGHT
+          </button>
+        </div>
+
+        <!-- no longer used, cus it was bad-->
+        <!--
+        <div hidden>
+          <link href="./home.css" rel="stylesheet" />
+          <div class="home-container">
+            <button class="home-button button">
+              <span class="home-text">RIGHT</span>
+            </button>
+
+            <button class="home-button1 button">
+              <span class="home-text1">UP</span>
+            </button>
+
+            <button class="home-button2 button">
+              <span class="home-text2">LEFT</span>
+            </button>
+
+            <button class="home-button3 button">
+              <span class="home-text3">DOWN</span>
+            </button>
+
+            <div class="home-container1"></div>
+
+            <div class="textarea home-textarea"></div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </body>
+
+</html>
+<!-- <div id="banner-message">
+  <p>Hello World</p>
+  <button>Change color</button>
+</div>
+ -->
